@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:Calibri; font-size:12pt }
+			p { margin:0pt }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;!DOCTYPE html&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;html lang="en"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;head&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;meta charset="UTF-8"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;title&gt;The Power of Clarity in Branding&lt;/title&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&amp;display=swap" rel="stylesheet"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;style&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">body {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">font-family: 'Inter', sans-serif;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: #f8fafc;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.chart-container {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">position: relative;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">width: 100%;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">max-width: 450px;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin-left: auto;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">margin-right: auto;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">height: 320px;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">@media (min-width: 768px) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.chart-container {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">height: 400px;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.concept-card {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: white;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border-radius: 0.75rem;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 1.5rem;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">text-align: center;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.concept-card .icon {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">font-size: 3rem;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">line-height: 1;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">.kpi-card {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">background-color: #f8fafc;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">border-radius: 0.75rem;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">padding: 1rem;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">text-align: center;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/style&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/head&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;body class="text-slate-800"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;header class="bg-white shadow-md"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="container mx-auto px-6 py-8 text-center"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h1 class="text-4xl md:text-5xl font-extrabold" style="color: #073B4C;"&gt;The Vague vs. The Vision: Why Clarity is Your Brand's Best Friend&lt;/h1&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto"&gt;A design brief is more than a list of requests. It's the blueprint for your brand. Providing clear, detailed information transforms the design process from a series of guesses into a focused, strategic partnership.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/header&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;main class="container mx-auto px-6 py-12"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="lg:col-span-3 bg-white rounded-lg shadow-md p-6"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2 class="text-3xl font-bold mb-4" style="color: #073B4C;"&gt;The Problem: A Vague Brief&lt;/h2&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-slate-600 mb-6"&gt;Without a clear vision, designers are forced to make assumptions. This can lead to a cycle of revisions, wasted effort, and a final product that doesn't capture your brand's true essence. It's a journey with no map.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #FF6B6B;"&gt;❓&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Uncertainty&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;The designer guesses at what you want.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #FF6B6B;"&gt;🔄&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Multiple Revisions&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;Back-and-forth cycles lead to frustration.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #FF6B6B;"&gt;⏳&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Wasted Time&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;Every revision adds days or weeks to the project.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #FF6B6B;"&gt;📉&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Poor Outcome&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;The final brand doesn't reflect your vision.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="lg:col-span-3 bg-white rounded-lg shadow-md p-6"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2 class="text-3xl font-bold mb-4" style="color: #073B4C;"&gt;The Solution: A Clear Brief&lt;/h2&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-slate-600 mb-6"&gt;By sharing your insights, you provide the designer with the tools to succeed. A clear brief acts as a compass, ensuring every creative decision is purposeful and moves the project forward efficiently.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #06D6A0;"&gt;🎯&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Focused Direction&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;Designers know exactly what the goal is.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #06D6A0;"&gt;✔️&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Fewer Revisions&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;The first concepts are much closer to the final vision.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #06D6A0;"&gt;⚡&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Faster Turnaround&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;Your project is completed on time and on budget.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="concept-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="icon" style="color: #06D6A0;"&gt;⭐&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h3 class="font-semibold text-lg mt-2"&gt;Exceptional Results&lt;/h3&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;A brand that truly resonates with your audience.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="lg:col-span-2 bg-white rounded-lg shadow-md p-6"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2 class="text-2xl font-bold mb-4" style="color: #073B4C;"&gt;The Benefits of Clarity: A Comparison&lt;/h2&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-slate-600 mb-4"&gt;This chart shows the quantifiable difference in key project metrics between a clear and a vague brief. The time and effort saved translates directly into a more successful outcome.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="chart-container"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;canvas id="benefitsChart"&gt;&lt;/canvas&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2 class="text-2xl font-bold mb-4" style="color: #073B4C;"&gt;What Designers Need to Know&lt;/h2&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-slate-600 mb-4"&gt;A great brief is rich with details. The more information you provide, the more precise the outcome will be. The key areas to focus on are:&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;ul class="space-y-4"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;li class="kpi-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="font-semibold"&gt;Brand Identity &amp; Values&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;What do you stand for?&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/li&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;li class="kpi-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="font-semibold"&gt;Target Audience&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;Who are you trying to reach?&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/li&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;li class="kpi-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="font-semibold"&gt;Visual References&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;What visual styles do you like/dislike?&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/li&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;li class="kpi-card"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="font-semibold"&gt;Brand Objectives&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="text-sm text-slate-500"&gt;What is the project's goal?&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/li&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/ul&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/main&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;footer class="bg-white mt-12"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;div class="container mx-auto px-6 py-8 text-center"&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;h2 class="text-3xl font-bold" style="color: #073B4C;"&gt;Clarity is the currency of creativity.&lt;/h2&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;p class="mt-3 text-slate-600 max-w-xl mx-auto"&gt;Invest in a great brief, and the returns on your brand will be invaluable.&lt;/p&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/div&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/footer&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const FONT_COLOR = '#073B4C';</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const GRID_COLOR = '#e2e8f0';</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const PALETTE = {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">coral: '#FF6B6B',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">yellow: '#FFD166',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">green: '#06D6A0',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">blue: '#118AB2',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">darkBlue: '#073B4C'</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">};</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">function wrapLabel(str, maxWidth) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">if (str.length &lt;= maxWidth) return str;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const words = str.split(' ');</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const lines = [];</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">let currentLine = '';</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">words.forEach(word =&gt; {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">if ((currentLine + ' ' + word).trim().length &gt; maxWidth) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">lines.push(currentLine.trim());</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">currentLine = word;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">} else {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">currentLine = (currentLine + ' ' + word).trim();</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">});</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">if (currentLine) lines.push(currentLine.trim());</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">return lines;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const tooltipTitleCallback = {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">plugins: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">tooltip: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">callbacks: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">title: function(tooltipItems) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const item = tooltipItems[0];</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">let label = item.chart.data.labels[item.dataIndex];</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">if (Array.isArray(label)) {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">return label.join(' ');</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">return label;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">},</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">legend: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">labels: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">color: FONT_COLOR,</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">font: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">family: "'Inter', sans-serif"</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">};</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">function createBenefitsChart() {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const ctx = document.getElementById('benefitsChart').getContext('2d');</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const rawLabels = ['Time to Finalize (Weeks)', 'Number of Revisions', 'Client Satisfaction Score (1-10)'];</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">const wrappedLabels = rawLabels.map(label =&gt; wrapLabel(label, 16));</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">new Chart(ctx, {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">type: 'bar',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">data: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">labels: wrappedLabels,</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">datasets: [{</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">label: 'Vague Brief',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">data: [6, 7, 4],</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">backgroundColor: PALETTE.coral,</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}, {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">label: 'Clear Brief',</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">data: [2, 1, 9],</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">backgroundColor: PALETTE.blue,</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}]</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">},</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">options: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">responsive: true,</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">maintainAspectRatio: false,</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">scales: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">x: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">grid: { display: false },</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">ticks: { color: FONT_COLOR }</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">},</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">y: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">grid: { color: GRID_COLOR },</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">ticks: { color: FONT_COLOR, stepSize: 1, min: 0 }</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">},</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">plugins: {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">...tooltipTitleCallback.plugins</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">});</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">}</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">document.addEventListener('DOMContentLoaded', () =&gt; {</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">createBenefitsChart();</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">});</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&#xa0;&#xa0;&#xa0; </span><span style="font-family:Helvetica">&lt;/script&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/body&gt;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica">&lt;/html&gt;</span>
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a></p>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4581d6a58cf94e929fad52deda295622","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
